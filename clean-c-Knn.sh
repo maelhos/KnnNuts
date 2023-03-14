@@ -1,0 +1,2 @@
+cd cbuild && make CLEAN
+

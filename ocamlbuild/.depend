@@ -1,0 +1,30 @@
+knn.cmo : \
+    prioQueue.cmi \
+    mnist.cmi \
+    knn.cmi
+knn.cmx : \
+    prioQueue.cmx \
+    mnist.cmx \
+    knn.cmi
+knn.cmi : \
+    mnist.cmi
+main.cmo : \
+    mnist.cmi \
+    knn.cmi
+main.cmx : \
+    mnist.cmx \
+    knn.cmx
+mnist.cmo : \
+    mnist.cmi
+mnist.cmx : \
+    mnist.cmi
+mnist.cmi :
+print_mnist.cmo : \
+    mnist.cmi
+print_mnist.cmx : \
+    mnist.cmx
+prioQueue.cmo : \
+    prioQueue.cmi
+prioQueue.cmx : \
+    prioQueue.cmi
+prioQueue.cmi :
