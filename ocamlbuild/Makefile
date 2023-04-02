@@ -2,7 +2,7 @@
 
 all: depend ocaml-knn
 
-ocaml-knn: mnist.cmx prioQueue.cmx knn.cmx kd.cmx main.cmx
+ocaml-knn: mnist.cmx prioQueue.cmx knn.cmx main.cmx
 	ocamlopt -o $@ $^
 
 clean:
