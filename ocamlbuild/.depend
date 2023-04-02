@@ -1,3 +1,8 @@
+kd.cmo : \
+    kd.cmi
+kd.cmx : \
+    kd.cmi
+kd.cmi :
 knn.cmo : \
     prioQueue.cmi \
     mnist.cmi \
@@ -19,12 +24,10 @@ mnist.cmo : \
 mnist.cmx : \
     mnist.cmi
 mnist.cmi :
-print_mnist.cmo : \
-    mnist.cmi
-print_mnist.cmx : \
-    mnist.cmx
 prioQueue.cmo : \
     prioQueue.cmi
 prioQueue.cmx : \
     prioQueue.cmi
 prioQueue.cmi :
+useless.cmo :
+useless.cmx :

@@ -1,8 +1,8 @@
 .PHONY: all
 
-all: ocaml-knn
+all: depend ocaml-knn
 
-ocaml-knn: mnist.cmx prioQueue.cmx knn.cmx main.cmx
+ocaml-knn: mnist.cmx prioQueue.cmx knn.cmx kd.cmx main.cmx
 	ocamlopt -o $@ $^
 
 clean:
@@ -14,4 +14,6 @@ clean:
 %.cmi: %.mli
 	ocamlopt -c -o $@ $<
 
+depend:
+	ocamldep *.ml *.mli > .depend
 include .depend
